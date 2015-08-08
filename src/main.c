@@ -45,6 +45,10 @@ static void update_time() {
   text_layer_set_text(s_time_layer, buffer);
 }
 
+static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
+  update_time();
+}
+
 static void init() {
   // Create main Window element and assign to pointer
   s_main_window = window_create();
@@ -60,15 +64,14 @@ static void init() {
 
   // Make sure the time is displayed from the start
   update_time();
+
+  // Register with TickTimerService
+  tick_timer_service_subscribe(MINUTE_UNIT, tick_handler);
 }
 
 static void deinit() {
     // Destroy Window
     window_destroy(s_main_window);
-}
-
-static void tick_handler(struct tm *tick_time, TimeUnits units_changed) {
-  update_time();
 }
 
 int main(void) {
