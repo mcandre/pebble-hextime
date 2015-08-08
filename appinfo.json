@@ -1,0 +1,19 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "andrew.pennebaker@gmail.com",
+    "longName": "hextime",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "hextime",
+    "uuid": "313d331d-7c90-4a37-bf7f-f58ae62bcb89",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
