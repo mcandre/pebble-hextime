@@ -7,13 +7,23 @@
     "longName": "hextime",
     "projectType": "native",
     "resources": {
-        "media": []
+        "media": [
+            {
+                "file": "images/hextime-screenshot.png",
+                "name": "screenshot",
+                "type": "png"
+            }
+        ]
     },
     "sdkVersion": "3",
     "shortName": "hextime",
+    "targetPlatforms": [
+        "aplite",
+        "basalt"
+    ],
     "uuid": "313d331d-7c90-4a37-bf7f-f58ae62bcb89",
     "versionLabel": "1.0",
     "watchapp": {
-        "watchface": false
+        "watchface": true
     }
 }
